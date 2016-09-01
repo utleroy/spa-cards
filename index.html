@@ -3,19 +3,30 @@
 <head>
   <meta charset="utf-8">
   <title>Cards</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="cards.css">
-
 </head>
 
 <body>
+ <nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Dynamic Cards</a>
+  </div>
+</nav>
+<div class="row">
+  <form class="col s6">
+    <div class="row">
+      <div class="input-field col s6">
+        <textarea class="materialize-textarea" id="user-info"></textarea>
+      </div>
+    </div>
+  </form>
+</div>
 
-<h2>Dynamic Cards</h2>
-<textarea id="user-info"></textarea>
-<button id="submit">Create</button>
-
+<button class="btn" id="submit">Create</button>
 <div id="DOM">
 
 </div>
-  <script src="cards.js"></script>
+<script src="cards.js"></script>
 </body>
 </html>
